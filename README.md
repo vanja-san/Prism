@@ -2,7 +2,7 @@
 
 ![screenshot](https://s1.gifyu.com/images/Screenshot-1219.png)
 
-[Live Demo](https://catgrills.github.io/Eden/) of <i>Prism</i>.
+[Live Demo](https://catgrills.github.io/Prism/) of <i>Prism</i>.
 
 About
 -------------------------------
