@@ -21,7 +21,7 @@ Instruction
 
 <p>For Mozilla Firefox</p>
 <ol> 
-<li> go to the settings or copy/paste <i>about:preferences</i> in the URL bar. In <i>General</i>, copy/paste the URL of the startpage (it should be something like <i>file:///C:/Users/[Your name]/Documents/EDEN/index.htm</i> in <i>Home Page</i> and choose the option <i>Show my home page</i> for <i>When Firefox starts</i>.</li>
+<li> go to the settings or copy/paste <i>about:preferences</i> in the URL bar. In <i>General</i>, copy/paste the URL of the startpage (it should be something like <i>file:///C:/Users/[Your name]/Documents/PRISM/index.htm</i> in <i>Home Page</i> and choose the option <i>Show my home page</i> for <i>When Firefox starts</i>.</li>
 <li> download the add-on <i>New Tab Homepage</i> (https://addons.mozilla.org/en-US/firefox/addon/new-tab-homepage/), it'll redirect you to your homepage each time you open a new tab.</li>
 </ol>
 <br>
@@ -45,7 +45,7 @@ I use several fonts for the startpage.
 Features
 -------------------------------
 
-<span><i>Prism</i> has two main feature.</span>
+<span><i>Prism</i> has two main features.</span>
 <ol>
 <li>In each cards, there is a <i>white box</i> which is actually a <i>select</i> button, namely you'll have to click on it to choose a link. The link of the active option is the <i>avatar</i> of each card.</li>
 <li>In the search bar, by entering some special keys, such as <i>-y jazz music</i>, you'll be able to search directly on youtube and not on Google. Another exemple with `-w moe`, it'll search 'moe' on wikipedia.</li>
