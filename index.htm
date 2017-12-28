@@ -8,6 +8,17 @@
 		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript">
 		             $(document).ready(function() {
+				var select = document.querySelector(".choice");
+				var selectOption = select.options[select.selectedIndex];
+				var lastSelected = localStorage.getItem('select');
+				if(lastSelected) {
+					select.value = lastSelected; 
+				};
+				select.onchange = function () {
+					lastSelected = select.options[select.selectedIndex].value;
+					console.log(lastSelected);
+					localStorage.setItem('select', lastSelected);
+				};
 				var btn = document.getElementsByClassName('choice');
 				var link = document.getElementsByClassName('button');
 				for(i=0; i<btn.length;i++) {
