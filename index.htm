@@ -18,14 +18,9 @@
 					lastSelected = select.options[select.selectedIndex].value;
 					console.log(lastSelected);
 					localStorage.setItem('select', lastSelected);
+					window.location.href=lastSelected;
 				};
-				var btn = document.getElementsByClassName('choice');
-				var link = document.getElementsByClassName('button');
-				for(i=0; i<btn.length;i++) {
-					var btn_value = btn[i].options[btn[i].selectedIndex].value;
-					link[i].href = btn_value;
-				};
-		        		var now = new Date();
+		        	var now = new Date();
 				var hour    = now.getHours();
 				var minute  = now.getMinutes();
 				var day = now.getDay();
