@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -8,18 +8,13 @@
 		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript">
 		             $(document).ready(function() {
-				var select = document.querySelector(".choice");
-				var selectOption = select.options[select.selectedIndex];
-				var lastSelected = localStorage.getItem('select');
-				if(lastSelected) {
-					select.value = lastSelected; 
+				var btn = document.getElementsByClassName('choice');
+				var link = document.getElementsByClassName('button');
+				for(i=0; i<btn.length;i++) {
+					var btn_value = btn[i].options[btn[i].selectedIndex].value;
+					link[i].href = btn_value;
 				};
-				select.onchange = function () {
-					lastSelected = select.options[select.selectedIndex].value;
-					console.log(lastSelected);
-					localStorage.setItem('select', lastSelected);
-				};
-		        	var now = new Date();
+		        		var now = new Date();
 				var hour    = now.getHours();
 				var minute  = now.getMinutes();
 				var day = now.getDay();
@@ -60,7 +55,7 @@
 						<img src="avatar/avatar_01.png" class="avatar"></img>
 					</a>
 					<p>4chan</p>
-					<select class="choice">
+					<select onchange="if (this.value) window.location.href=this.value, this.selected;" class="choice">
 						<option value="https://boards.4chan.org/a/">アニメ KAWAI DESU NE</option>
 						<option value="https://boards.4chan.org/v/">テレビゲーム GAMES</option>
 						<option value="https://boards.4chan.org/vg/">ゲーム 普通  general</option>
@@ -72,7 +67,7 @@
 						<img src="avatar/avatar_02.png" class="avatar"></img>
 					</a>
 					<p>アニメ</p>
-					<select class="choice">
+					<select onchange="if (this.value) window.location.href=this.value"" class="choice">
 						<option value="http://kissanime.ru/">kissanime.ru</option>
 						<option value="https://nyaa.si/">nyaa.si</option>
 						<option value="https://animebytes.tv/">animebytes</option>
@@ -84,7 +79,7 @@
 						<img src="avatar/avatar_03.png" class="avatar"></img>
 					</a>
 					<p>へんたい</p>
-					<select class="choice">
+					<select onchange="if (this.value) window.location.href=this.value"" class="choice">
 						<option value="https://exhentai.org/">sadpanda.org</option>
 						<option value="https://nhentai.net/">nhentai.net</option>
 						<option value="https://hitomi.la"/>hitomi.la</option>
@@ -96,7 +91,7 @@
 						<img src="avatar/avatar_04.png" class="avatar"></img>
 					</a>
 					<p>music</p>
-					<select class="choice">
+					<select onchange="if (this.value) window.location.href=this.value"" class="choice">
 						<option value="https://www.youtube.com/">youtube</option>
 						<option value="https://soundcloud.com/">soundcloud</option>
 						<option value="https://dojin.co/">dojin.co</option>
@@ -108,7 +103,7 @@
 						<img src="avatar/avatar_05.png" class="avatar"></img>
 					</a>
 					<p>art</p>
-					<select class="choice">
+					<select onchange="if (this.value) window.location.href=this.value"" class="choice">
 						<option value="https://www.pixiv.net/">pixiv.net</option>
 						<option value="https://www.deviantart.com/">deviantart</option>
 						<option value="https://www.tumblr.com/dashboard">tumblr</option>
@@ -120,7 +115,7 @@
 						<img src="avatar/avatar_06.png" class="avatar"></img>
 					</a>
 					<p>misc</p>
-					<select class="choice">
+					<select onchange="if (this.value) window.location.href=this.value"" class="choice">
 						<option value="https://github.com/Catgrills">github</option>
 						<option value="https://greasyfork.org/en">greasyfork</option>
 						<option value="http://flatcolors.net/">flatcolors</option>
