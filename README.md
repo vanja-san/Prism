@@ -9,7 +9,7 @@ About
 
 <i>Prism</i> is a startpage with a simple layout.
 
-A startpage/homepage is a local website, namely you'll be able to access it thanks to files present on your computer (in general, it'll be a .htm file), and some browser like Firefox Mozilla and Google Chrome will allow you to set a custom homepage. What's more, thanks to some add-ons/extensions such as 'New Tab Homepage' for FF or 'New Tab Redirect' for Chrome, you'll be able to set this said startpage as your new tab page (amazing isn't it ?). There are a lot of custom startpage on the net, you can check this list of startpage http://startpages.github.io/ or search some of them on github/deviantart. 
+Startpages are locally hosted, usually, webpage that serves as a homepage for your browser.
 
 Instruction
 -------------------------------
@@ -38,8 +38,8 @@ Instruction
 I use several fonts for the startpage.
 <ol>
 <li> <a href="https://www.fontsquirrel.com/fonts/bebas-neue">Bebas Neue</a></li>
-<li> <a href="https://www.fontsquirrel.com/fonts/roboto">Roboto</a></li>
 <li> <a href="https://www.freejapanesefont.com/kf-himaji/">KFhimaji</a></li>
+<li> <a href="https://www.fontsquirrel.com/fonts/roboto">Roboto</a></li>
 </ol>
 
 Features
