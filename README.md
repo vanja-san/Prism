@@ -1,6 +1,6 @@
 # Prism
 
-![screenshot](https://s1.gifyu.com/images/Screenshot-1256.png)
+<img src="preview_prism.png" width="100%">
 
 [Live Demo](https://catgrills.github.io/Prism/) of <i>Prism</i>.
 
