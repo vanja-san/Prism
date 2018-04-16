@@ -1,6 +1,6 @@
 # Prism
 
-<img src="preview_prism.png" width="100%">
+<img src="preview_prism_2.png" width="100%">
 
 [Live Demo](https://catgrills.github.io/Prism/) of <i>Prism</i>.
 
