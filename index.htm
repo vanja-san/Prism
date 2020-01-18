@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<title>Gonna Catch'em All</title>
+		<title>Собираюсь поймать все</title>
 		<link rel="shortcut icon" type="image/png" href="icons/favicon.png"/>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
@@ -14,11 +14,11 @@
 					var btn_value = btn[i].options[btn[i].selectedIndex].value;
 					link[i].href = btn_value;
 				};
-		        		var now = new Date();
+		    var now 		= new Date();
 				var hour    = now.getHours();
 				var minute  = now.getMinutes();
-				var day = now.getDay();
-				var L = ["mon.", "tues.", "wed.", "thurs.", "fri.", "sat.","sun."];
+				var day 		= now.getDay();
+				var L 			= ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб","Вс"];
 				if(hour < 10) {
 					hour = "0" + hour;
 				}
@@ -40,86 +40,89 @@
 		<div id="container">
 			<div id="banner">
 				<div id="message">
-					<div id="message_box">× welcome ×</div>
+					<div id="message_box">× добро пожаловать ×</div>
 				</div>
 				<div id="time_box"></div>
 				<div id="day_box"></div>
 			</div>
-	                           <div class="form">
-	                           		<input  id="searchbox" name="q" type="text" autocomplete="off" class="cleardefault" maxlength="100"   placeholder="search for inspiration." size="17" autofocus="autofocus" />
-	                         	              <input type="submit" id="image-button" value=""></input>
-	                           </div>
+	      <div class="form">
+	      	<input  id="searchbox" name="q" type="text" autocomplete="off" class="cleardefault" maxlength="100"   placeholder="в поисках вдохновения." size="17" autofocus="autofocus" />
+	        <input type="submit" id="image-button" value=""></input>
+	      </div>
 			<div id="main">
 				<div class="card" style="background-color: #42729B; color: #4387B5;">
 					<a class="button">
 						<img src="avatar/avatar_01.png" class="avatar"></img>
 					</a>
-					<p>4chan</p>
+					<p>ВКОНТАКТЕ</p>
 					<select onchange="if (this.value) window.location.href=this.value, this.selected;" class="choice">
-						<option value="https://boards.4chan.org/a/">ANIME</option>
-						<option value="https://boards.4chan.org/v/">GAMES</option>
-						<option value="https://boards.4chan.org/vg/">GENERALS</option>
-						<option value="https://boards.4chan.org/wg/">RICE</option>
+						<option value="https://vk.com/">Моя страница</option>
+						<option value="https://vk.com/im">Сообщения</option>
+						<option value="https://vk.com/audios">Музыка</option>
+						<option value="https://vk.com/friends">Друзья</option>
+						<option value="https://vk.com/groups">Сообщества</option>
 					</select>
 				</div>
 				<div class="card" style="background-color: #FCB941; color: #F0A830;">
 					<a class="button">
 						<img src="avatar/avatar_02.png" class="avatar"></img>
 					</a>
-					<p>アニメ</p>
+					<p>АНИМЕ</p>
 					<select onchange="if (this.value) window.location.href=this.value"" class="choice">
-						<option value="http://kissanime.ru/">kissanime.ru</option>
-						<option value="https://nyaa.si/">nyaa.si</option>
-						<option value="https://animebytes.tv/">animebytes</option>
-						<option value="https://bato.to/">bato.to</option>
+						<option value="https://www.anilibria.tv/pages/catalog.php">AniLibria</option>
+						<option value="https://online.anidub.com/">AniDUB</option>
+						<option value="http://shiza-project.com/">SHIZA Project</option>
+						<option value="http://online.animedia.tv/">Animedia</option>
 					</select>
 				</div>
 				<div class="card" style="background-color: #7E3661; color: #E6567A;">
 					<a class="button">
 						<img src="avatar/avatar_03.png" class="avatar"></img>
 					</a>
-					<p>へんたい</p>
+					<p>ЭМАНГА</p>
 					<select onchange="if (this.value) window.location.href=this.value"" class="choice">
-						<option value="https://exhentai.org/">sadpanda.org</option>
-						<option value="https://nhentai.net/">nhentai.net</option>
-						<option value="https://hitomi.la"/>hitomi.la</option>
-						<option value="https://sukebei.nyaa.si/">sukebei.nyaa.si</option>
+						<option value="https://e-hentai.org/">sadpanda</option>
+						<option value="https://nhentai.net/">nhentai</option>
+						<option value="https://hitomi.la"/>hitomi</option>
+						<option value="https://sukebei.nyaa.si/">sukebei nyaa</option>
+						<option value="https://ohentai.org/">ohentai</option>
 					</select>
 				</div>
 				<div class="card" style="background-color: #4D545E; color: #4D545E;">
 					<a class="button">
 						<img src="avatar/avatar_04.png" class="avatar"></img>
 					</a>
-					<p>music</p>
+					<p>МУЗЫКА</p>
 					<select onchange="if (this.value) window.location.href=this.value"" class="choice">
-						<option value="https://www.youtube.com/">youtube</option>
-						<option value="https://soundcloud.com/">soundcloud</option>
-						<option value="https://dojin.co/">dojin.co</option>
-						<option value="https://bandcamp.com/">bandcamp</option>
+						<option value="https://music.yandex.ru/">YouTube Music</option>
+						<option value="https://soundcloud.com/">SoundCloud</option>
+						<option value="https://open.spotify.com/">Spotify</option>
+						<option value="https://music.yandex.ru/">Yandex.Music</option>
 					</select>
 				</div>
 				<div class="card" style="background-color: #E26E67; color: #E74C3C;">
 					<a class="button">
 						<img src="avatar/avatar_05.png" class="avatar"></img>
 					</a>
-					<p>art</p>
+					<p>АРТ</p>
 					<select onchange="if (this.value) window.location.href=this.value"" class="choice">
-						<option value="https://www.pixiv.net/">pixiv.net</option>
-						<option value="https://www.deviantart.com/">deviantart</option>
-						<option value="https://www.tumblr.com/dashboard">tumblr</option>
-						<option value="https://danbooru.donmai.us/">danbooru</option>
+						<option value="https://www.pixiv.net/">Pixiv</option>
+						<option value="https://www.deviantart.com/">DeviantArt</option>
+						<option value="https://www.tumblr.com/dashboard">Tumblr</option>
+						<option value="https://wall.alphacoders.com/">WallpapersAbbys</option>
 					</select>
 				</div>
 				<div class="card" style="background-color: #2CC990; color: #2CC990;">
 					<a class="button">
 						<img src="avatar/avatar_06.png" class="avatar"></img>
 					</a>
-					<p>misc</p>
+					<p>РАЗНОЕ</p>
 					<select onchange="if (this.value) window.location.href=this.value"" class="choice">
-						<option value="https://github.com/Catgrills">github</option>
-						<option value="https://greasyfork.org/en">greasyfork</option>
-						<option value="http://flatcolors.net/">flatcolors</option>
-						<option value="https://www.dealabs.com/">dealabs</option>
+						<option value="https://github.com/Catgrills">GitHub</option>
+						<option value="https://greasyfork.org/en">GreasyFork</option>
+						<option value="http://flatcolors.net/">FlatColors</option>
+						<option value="https://www.dealabs.com/">Dealabs</option>
+						<option value="https://libraries.io/">Libraries</option>
 					</select>
 				</div>
 			</div>
