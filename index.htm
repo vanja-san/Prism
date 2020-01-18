@@ -18,7 +18,7 @@
 				var hour    = now.getHours();
 				var minute  = now.getMinutes();
 				var day 		= now.getDay();
-				var L 			= ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб","Вс"];
+				var L 			= ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота","Воскресенье"];
 				if(hour < 10) {
 					hour = "0" + hour;
 				}
@@ -31,7 +31,7 @@
 				if (minute < 10) {
 					minute = "0" + minute;
 				};
-				document.getElementById("time_box").innerHTML = hour + "'" + minute;
+				document.getElementById("time_box").innerHTML = hour + ":" + minute;
 				document.getElementById("day_box").innerHTML = L[day];
 			});	
 		 </script>
